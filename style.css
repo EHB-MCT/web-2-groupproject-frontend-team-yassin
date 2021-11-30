@@ -1,0 +1,34 @@
+#main {
+    max-width: 75vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#challenges {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.delete:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.edit:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.challenge {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+}
