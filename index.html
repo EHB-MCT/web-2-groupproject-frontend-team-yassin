@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
-
 <body>
     <div id="main">
-        <div id="insert">
+        <div class="item" id="insert">
             <h1>Insert new challenge</h1>
             <form>
                 <div class="mb-3">
-                    <label for="challengeNameInput" class="form-label">Challenge name</label>
-                    <input type="text" class="form-control" id="challengeNameInput">
+                  <label for="challengeNameInput" class="form-label">Challenge name</label>
+                  <input type="text" class="form-control" id="challengeNameInput">
                 </div>
                 <div class="mb-3">
                     <label for="challengeCourseInput" class="form-label">Challenge course</label>
@@ -32,17 +27,35 @@
                     <input type="number" class="form-control" id="challengePointsInput">
                 </div>
                 <button id="insertbtn" type="button" class="btn btn-primary">Submit</button>
-            </form>
+              </form>
         </div>
-        <div>
+        <div class="item" id="editForm">
+            <h1>Edit Challenge</h1>
+            <form>
+                <div class="mb-3">
+                  <label for="challengeNameInputEdit" class="form-label">Challenge name</label>
+                  <input type="text" class="form-control" id="challengeNameInputEdit">
+                </div>
+                <div class="mb-3">
+                    <label for="challengeCourseInputEdit" class="form-label">Challenge course</label>
+                    <input type="text" class="form-control" id="challengeCourseInputEdit">
+                </div>
+                <div class="mb-3">
+                    <label for="challengePointsInputEdit" class="form-label">Challenge points</label>
+                    <input type="number" class="form-control" id="challengePointsInputEdit">
+                </div>
+                <input type="text" id="challengeId" hidden/>
+                <button id="editbtn" type="button" class="btn btn-primary">Update</button>
+              </form>
+        </div>
+        <div class="item">
             <h1>All challenges</h1>
             <button id="loadChallenges" class="btn btn-primary w-100 mb-3">Load challenges</button>
             <div id="challenges">
-
+        
             </div>
         </div>
     </div>
     <script src="main.js"></script>
 </body>
-
 </html>

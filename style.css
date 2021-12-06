@@ -1,34 +1,42 @@
-#main {
+#main{
     max-width: 75vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-#challenges {
+#challenges{
     display: flex;
     flex-direction: column;
     gap: 1vh;
 }
 
-.icons {
+.icons{
     display: flex;
     justify-content: space-around;
 }
 
-.delete:hover {
+.delete:hover{
     color: red;
     cursor: pointer;
 }
 
-.edit:hover {
+.edit:hover{
     color: blue;
     cursor: pointer;
 }
 
-.challenge {
+.challenge{
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
     border-radius: 5px;
+}
+
+#editForm{
+    display: none;
+}
+
+.item{
+    flex-basis: 30%;
 }
